@@ -1,0 +1,139 @@
+
+<style type = "text/css">
+:root {
+	--slideshow-size-px: 400px;
+}
+
+#slideshowDiv {
+	/*float: right;*/ /*for when there's more text in here, set it to the right */
+	height: var(--slideshow-size-px);
+	width: var(--slideshow-size-px);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-left: auto; /* these are for less text -- center */
+	margin-right: auto;
+}
+
+#slideshowDiv img {
+	position: absolute;
+	transition: opacity 1.5s;
+	opacity: 0;
+	margin-left: auto;
+	margin-right: auto;
+	max-height: var(--slideshow-size-px);
+	max-width: var(--slideshow-size-px);
+	object-fit: contain;
+}
+
+#slideshowDiv img.fadeIn {
+	opacity: 1;
+}
+
+</style>
+
+<div id = "slideshowDiv"></div>
+
+<script>
+	var slideIndex = 0,
+		imgDuration = 3000,
+	    slideshowDiv = document.getElementById("slideshowDiv"),
+	    slides = slideshowDiv.childNodes;
+	    // all images here:
+		// note the first image may appear to be the last image if it gets eaten up by loading time. No big deal in this application.
+		imgArray = [
+	        '/assets/129/23/fwr19_3_2.jpg',
+	        '/assets/129/23/fwr19_1_2.jpg',
+	        '/assets/129/23/fwr19_3_1.jpg',
+	        '/assets/129/23/TOPSoccer2019_(31).JPG',
+	        '/assets/129/23/fwr19_1_1.jpg',
+	        '/assets/129/23/AFL_Refs.jpg',
+	        '/assets/129/23/AFL_17_6.jpg',
+	        '/assets/129/23/20181216_190658.jpg',
+	        '/assets/129/23/20_Ou27_UUG.png',
+	        '/assets/129/23/18state_11.jpg',
+	        '/assets/129/23/18_refsfutsal_2.jpg',
+	        '/assets/129/23/18_fsc_2_2.jpg',
+	        '/assets/129/23/18_fsc_2_1.jpg',
+	        '/assets/129/23/18_fsc.jpg',
+	        '/assets/129/23/18_Fef2018_1.jpg',
+	        '/assets/129/23/18_Fair_Play_SC.jpg',
+	        '/assets/129/23/17_statecup_refs.jpg',
+	        '/assets/129/23/17_referee_logo.jpg',
+	        '/assets/129/23/17_ref23jpg.jpg',
+	        '/assets/129/23/17_ref4.jpg',
+	        '/assets/129/23/17_ref2.jpg',
+	        '/assets/129/23/17_ref1.jpg',
+	        '/assets/129/23/17_AFL_2_2.jpg',
+	        '/assets/129/23/17_AFL_2_1.jpg'
+	    ];
+
+	function buildSlideshow(arr) {
+	    for (i = 0; i < arr.length; i++) {
+	        var img = document.createElement('img');
+	        img.src = arr[i];
+	        img.alt = "referee slideshow";
+	        slideshowDiv.appendChild(img);
+	    }
+	}
+
+	function slideshow() {
+
+		function fadeIn(e) {
+			e.className = "fadeIn";
+		}
+
+		function fadeOut(e) {
+			e.className = "";
+		}
+	  
+		fadeOut(slides[slideIndex]);
+		slideIndex++;
+		if (slideIndex == slides.length) {slideIndex = 0;}
+		fadeIn(slides[slideIndex]);
+		
+		setTimeout(function () {slideshow();}, imgDuration);
+		
+		}
+		
+	buildSlideshow(imgArray);
+	slideshow();
+</script>
+
+<h2>Getting Started</h2>
+
+<p>The easiest way to get started is to head to <a href = "https://www.aksra.org/becoming-a-referee" target = "_blank">https://www.aksra.org/becoming-a-referee</a>. This page will walk you through the steps necessary to become a referee as well as present you with a form to get you on the mailing list designed specifically for people who are interested in becoming a referee.</p>
+
+<p>If you have any questions, or want to know about where to get games, it is best to contact your District Referee Administrator. Contact info for all Alaska referee administrators can be found at the <a href="https://www.aksra.org/contact-us" target="blank_">Alaska Soccer Referee Association &quot;Contact Us&quot; page</a>. If an administrator is currently not listed for your region, contact the State Youth Referee Administrator.</p>
+<p>The Alaska Soccer Referee Association website, <a href="http://aksra.org" target = "_blank">aksra.org</a>, has many other resources for referees as well.</p>
+
+<br />
+<br />
+
+<h5 style = "text-align: center;">Helpful Links</h5>
+
+<table style = "width: 100%;">
+	<tr>
+		<td style = "text-align: center; width: 33%; vertical-align: top; height: 165px;">
+			<a href = "http://www.aksra.org/" target = "_blank">
+				<figure><img src = "/assets/129/23/17_referee_logo.jpg" alt = "AKSRA Logo" style = "display: block; max-height: 165px; margin-left: auto; margin-right: auto;"><figcaption>Alaska Soccer Referee Association Website</figcaption></figure>
+			</a>
+		</td>
+
+		<td style = "text-align: center; width: 33%; vertical-align: top; height: 165px;">
+			<a href = "https://www.ussoccer.com/referee-program/resource-center/overview" target = "_blank">
+				<figure><img src = "/assets/129/6/USSF_logo.png" alt = "US Soccer Logo" style = "display: block; max-height: 165px; margin-left: auto; margin-right: auto;"><figcaption>US Soccer Federation Referee Resource Center</figcaption></figure>
+			</a>
+		</td>
+
+		<td style = "text-align: center; width: 33%; vertical-align: top; height: 165px;">
+			<a href = "https://ussoccer.app.box.com/s/xx3byxqgodqtl1h15865" target = "_blank">
+				<figure><img src = "/assets/129/6/LOTG_Thumb.jpg" alt = "IFAB Laws of the Game" style = "display: block; max-height: 165px; margin-left: auto; margin-right: auto;"> <figcaption>Laws of the Game</figcaption></figure>
+			</a>
+		</td>
+	</tr>
+
+</table>
+
+</body>

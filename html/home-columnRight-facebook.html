@@ -1,0 +1,111 @@
+<!-- //IMPORTANT NOTE: this code was forwarded to AE who hard coded it into the site. Any modifications currently must be sent to them. -->
+
+<style type = "text/css">
+	
+	/*#curator-feed {
+		width: auto;
+		height: 500px;
+	}
+	
+	.crt-logo {
+		display: block;
+		position: absolute;
+		bottom: 0px;
+		right: 10px;
+		font-size: 0.9em;
+		z-index: 999;
+		color: #090909 !important;
+		text-decoration: none;
+		margin-top: 10px;
+	}*/
+
+
+	.tagembed-container {
+		overflow-y: scroll !important;
+		height: 500px !important;
+		width: 100% !important;
+	}
+
+	/*full width*/
+	.midWidth {
+		display: none !important;
+	}
+
+
+	/*mid-width*/
+	@media screen and (max-width: 1278px) and (min-width: 761px) {
+		.fullWidth {
+			display: none !important;
+		}
+		
+		.midWidth {
+			display: block !important;
+		}
+
+		.narrowWidth {
+			display: none !important;
+		}
+	
+	}
+
+	/*narrow width*/
+	@media screen and (max-width: 760px) {
+		.fullWidth {
+			display: none !important;
+		}
+		
+		.midWidth {
+			display: none !important;
+		}
+
+		.narrowWidth {
+			display: block !important;
+		}
+
+		.grid_4 {
+			border: none !important;
+		}
+	}
+
+
+</style>
+
+<div class = "fullWidth narrowWidth">
+	<div class="tagembed-container" style="margin:0 auto; width:380px;height:100%;overflow: auto;"><div class="tagembed-socialwall" data-wall-id="70538" view-url="https://widget.tagembed.com/70538?view"></div> 
+	<script src="//widget.tagembed.com/embed.min.js" type="text/javascript"></script></div>
+</div>
+
+<div class = "midWidth" id = "columnRightMidWidth">
+	<div class="tagembed-container" style=" width:100%;height:100%;overflow: auto;"><div class="tagembed-socialwall" data-wall-id="70543" view-url="https://widget.tagembed.com/70543?view">  </div> <script src="//widget.tagembed.com/embed.min.js" type="text/javascript"></script></div>
+</div>
+
+
+<!--link rel="stylesheet" type="text/css" href="https://cdn.curator.io/3.1/css/curator.css"/-->
+
+<!--div id="curator-feed"></div>
+<p><a href="https://curator.io" target="_blank" class="crt-logo">Powered by Curator.io</a></p>
+
+<script type="text/javascript" src="https://cdn.curator.io/3.1/js/curator.js"></script-->
+
+<!--script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-7e1dda79-9695-453e-b370-86580feeea7b"></div-->
+
+
+
+
+<script type="text/javascript">
+
+	var blockElement = document.getElementById('columnRightMidWidth').parentElement;
+	blockElement.style = "width: 100%;";
+
+	var gridElement = document.getElementById('columnRightMidWidth').parentElement.parentElement;
+	gridElement.style = "border-left: solid 3px #17468c; padding-left: 4px; z-index: 5;";
+
+
+   /* var widget = new Curator.Widgets.Carousel({
+        debug:false,
+        container:'#curator-feed',
+        feedId:'427acdce-e541-418f-90af-7f7b1fa13bec',
+		maxHeight: 400
+    });*/
+</script>

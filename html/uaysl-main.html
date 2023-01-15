@@ -1,0 +1,122 @@
+<style type = "text/css">
+	.clubGrid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, 350px);
+		grid-column-gap: 100px;
+		grid-row-gap: 20px;
+		margin-bottom: 20px;
+		margin-left: 80px;
+	}
+	
+	.subGrid {
+		display: grid;
+		grid-template-columns: 140px max-content;
+		grid-column-gap: 20px;
+	}
+	
+	.subGrid div:nth-child(1) {
+		justify-self: end;
+		align-self: center;
+	}
+	
+	.subGrid img {
+		max-width: 135px;
+		max-height: 135px;
+	}
+	
+	h2 {
+		position: relative;
+		overflow: hidden;
+	}
+	
+	h2:after {
+		display: inline-block;
+		content: "";
+		height: 4px;
+		background: #17468c;
+		position: absolute;
+		width: 100%;
+		top: 50%;
+		margin-top: -2px;
+		margin-left: 10px;
+	}
+	
+	.mobileOnly {
+		display: none !important;
+	}
+	
+	@media screen and (max-width: 959px) {
+		.nonMobile {
+			display: none !important;
+		}
+		
+		.mobileOnly {
+			display: block !important;
+		}
+	
+	}
+</style>
+
+<img src = "/assets/129/6/uaysl-small-72dpi.png" alt = "UAYSL Logo" style = "display: float; float: right;" height = "218" width = "190"/>
+<p>The United Anchorage Youth Soccer League (UAYSL) is the largest competitive youth soccer league in Anchorage, Alaska. UAYSL is comprised of member youth competitive clubs located in Anchorage, Eagle River/Chugiak, and the Matanuska-Susitna Valley. UAYSL offers three competitive leagues per soccer year:</p>
+
+<ul style = "list-style-type:none;">
+	<li><b>Indoor:</b> Early Junuary - Early April</li>
+	<li><b>Summer Outdoor:</b> Late May - July</li>
+	<li><b>Fall Outdoor:</b> Late August - Early October</li>
+</ul>
+
+<p>UAYSL is a AYSA-sanctioned league and Associate Member of AYSA.</p>
+
+<h3 style = "text-align: center; clear: right; margin-top: 50px;">For more information and registration, visit the <a href = "http://www.uaysl.org/" target = "_blank">UAYSL Website</a></h3>
+
+<div class = "mobileOnly">
+	<div class = "accordion" id = "accordion">
+		<h3>Member Clubs</h3>
+		<div>
+			<div class = "clubGrid">
+				<div class = "subGrid">
+					<div><a href="http://www.alaskarush.com/" target = "_blank"><img alt = "Alaska Rush Logo" src = "/assets/129/6/AlaskaRushSoccerClub.jpg" /></a></div>
+					
+					<div>
+						<p><a href="http://www.alaskarush.com/" target = "_blank"><strong>Alaska Rush</strong></a></p>
+						<p>Competitive Program<br />Developmental Academy<br />Elite Programs/TOPSoccer<br />Futsal/Clinics/Camps<br />Tournaments</p>
+					</div>
+				</div>
+				<div class = "subGrid">
+					<div><a href="http://www.anchorageyouthsoccer.org/home.php" target = "_blank"><img alt = "Anchorage Youth Soccer Logo" src = "/assets/129/6/AnchorageYouthSoccer.jpg" /></a></div>
+					
+					<div>
+						<p><a href="http://www.anchorageyouthsoccer.org/home.php" target = "_blank"><strong>Anchorage Youth Soccer</strong></a></p>		
+						<p>Recreational/TOPSoccer<br />Developmental Academy<br />Competitive Program<br />Futsal/Clinics/Camps<br />Tournaments</p>
+					</div>
+				</div>
+				
+				<div class = "subGrid">
+					<div><a href="http://www.ssaak.com/" target = "_blank"><img alt = "Chugiak Soccer Logo" src = "/assets/129/6/CSC_transparent.png" /></a></div>
+					
+					<div>
+						<p><a href="http://www.ssaak.com/" target = "_blank"><strong>Chugiak Soccer</strong></a></p>
+						<p>Recreational Program<br /> Competitive Program</p>
+					</div>
+				</div>
+				<div class = "subGrid">
+					<div><a href="http://www.cookinletsc.com/home.php" target = "_blank"><img alt = "Cook Inlet SC Logo" src = "/assets/129/6/2012_Velocity_CISC.jpg" /></a></div>
+					
+					<div>
+						<p><a href="http://www.cookinletsc.com/home.php" target = "_blank"><strong>Cook Inlet Soccer Club</strong></a></p>
+						<p>Recreational Program<br />Developmental Academy<br />Competitive Program<br />Tournaments</p>
+					</div>
+				</div>
+				<div class = "subGrid">
+					<div><a href="http://www.wasillayouthsoccer.org/ValleyRevolution" target = "_blank"><img alt = "Valley Revolution Logo" src = "/assets/129/6/valleyrevolution_logo_FINAL.png" /></a></div>
+					
+					<div>
+						<p><a href="http://www.wasillayouthsoccer.org/ValleyRevolution" target = "_blank"><strong>Valley Revolution</strong></a></p>
+						<p>Competitive Program</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,55 @@
+<!-- first simple slideshow. Replaced with the fading one added in referees-main.html and kept here for reference -->
+
+
+<!-- all images in slideshow -->
+<div style="float: right; height: 270px; width: 270px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+<img class="mySlides" src="/assets/129/23/USSF_Recognize_to_Recover_website_large.png" alt = "referee slideshow">
+<img class="mySlides" src="/assets/129/23/fwr19_3_2.jpg" alt = "referee slideshow">
+<img class="mySlides" src="/assets/129/23/fwr19_1_2.jpg" alt = "referee slideshow">
+<img class="mySlides" src="/assets/129/23/fwr19_3_1.jpg" alt = "referee slideshow">
+<img class="mySlides" src="/assets/129/23/TOPSoccer2019_(31).JPG" alt = "referee slideshow">
+<img class="mySlides" src="/assets/129/23/fwr19_1_1.jpg" alt = "referee slideshow">
+<img class="mySlides" src="/assets/129/23/AFL_Refs.jpg" alt = "referee slideshow">
+<img class="mySlides" src="/assets/129/23/AFL_17_6.jpg" alt = "referee slideshow">
+<img class="mySlides" src="/assets/129/23/20181216_190658.jpg" alt = "referee slideshow">
+<img class="mySlides" src="/assets/129/23/20_Ou27_UUG.png" alt = "referee slideshow">
+<img class="mySlides" src="/assets/129/23/18state_11.jpg" alt = "referee slideshow">
+<img class="mySlides" src="/assets/129/23/18_refsfutsal_2.jpg" alt = "referee slideshow">
+<img class="mySlides" src="/assets/129/23/18_fsc_2_2.jpg" alt = "referee slideshow">
+<img class="mySlides" src="/assets/129/23/18_fsc_2_1.jpg" alt = "referee slideshow">
+<img class="mySlides" src="/assets/129/23/18_fsc.jpg" alt = "referee slideshow">
+<img class="mySlides" src="/assets/129/23/18_Fef2018_1.jpg" alt = "referee slideshow">
+<img class="mySlides" src="/assets/129/23/18_Fair_Play_SC.jpg" alt = "referee slideshow">
+<img class="mySlides" src="/assets/129/23/17_statecup_refs.jpg" alt = "referee slideshow">
+<img class="mySlides" src="/assets/129/23/17_referee_logo.jpg" alt = "referee slideshow">
+<img class="mySlides" src="/assets/129/23/17_ref23jpg.jpg" alt = "referee slideshow">
+<img class="mySlides" src="/assets/129/23/17_ref4.jpg" alt = "referee slideshow">
+<img class="mySlides" src="/assets/129/23/17_ref2.jpg" alt = "referee slideshow">
+<img class="mySlides" src="/assets/129/23/17_ref1.jpg" alt = "referee slideshow">
+<img class="mySlides" src="/assets/129/23/17_AFL_2_2.jpg" alt = "referee slideshow">
+<img class="mySlides" src="/assets/129/23/17_AFL_2_1.jpg" alt = "referee slideshow">
+</div>
+<!-- end slideshow -->
+
+<script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+	x[i].style.marginLeft = "auto";
+	x[i].style.marginRight = "auto";
+	x[i].style.maxHeight = "270px";
+	x[i].style.maxWidth = "270px";
+	x[i].style.objectFit = "contain";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 2000); //Change image every 2 seconds
+}
+
+</script>
