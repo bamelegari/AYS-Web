@@ -14,9 +14,7 @@
 	
 	}
 
-	#container {
-		margin-bottom: 50px;
-		margin-top: 50px;
+	.gridContainer {	
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-auto-flow: column;
@@ -25,7 +23,43 @@
 		justify-content: space-evenly;
 	}
 
-	#container a.more-link:visited, a.more-link {
+	.TOPSoccerTable td:first-child {
+		font-weight: bold;
+		padding-right: 4em;
+	}
+
+	.TOPSoccerTable tr:nth-child(odd) {
+		background-color: #f2f2f2;
+	}
+
+	.contactTable {
+		border: 1px solid;
+		border-collapse: separate;
+		border-color: #cccccc;
+		border-radius: 10px;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.contactTable p {
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+
+	.contactTable td {
+		border-left: 1px solid;
+		border-color: #cccccc;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.contactTable td:first-child {
+		border-left: none;
+	}
+
+
+	#gridContainer a.more-link:visited, a.more-link {
 		color: #17468c;
 	}
 
@@ -33,38 +67,99 @@
 
 <p class = "mobileOnly" style = "text-align: center;"><img src = "/assets/129/6/topsoccer_logo.png" alt = "Top Soccer Logo" style = "width: 70%;"></p>
 
-<!--div style = "text-align: center;">
-	<h2>Summer 2022 Season</h2>
-	<h5>May 16 - June 20</h5>
-	<h5>Mondays 6-7pm at Fox Hollow Chalet, Anchorage</h5>
-</div-->
+<h3 style = "text-align: center;">The Outreach Program for Soccer (TOPSoccer) is a program for children ages 5+ who experience physical and/or cognitive disability.</h3>
 
-<p style = "text-align: center;">Click below if you are interested in becoming a TOPSoccer volunteer!</p>
+<div style = "text-align: center;">
+	<h2>Winter 2023 Season</h2>
+	<h5>February 12 - March 19</h5>
+	<h5>Sundays at Fox Hollow Chalet</h5>
+	<h5>11801 Brayton Dr. Anchorage</h5>
+	<h5>Price: $15</h5>
+</div>
+
+<!--p style = "text-align: center;">Click below if you are interested in becoming a TOPSoccer volunteer!</p>
 
 <div class = "more-link-line" style = "text-align: center; margin-bottom: 50px;">
 	<a class = "more-link" href = "https://system.gotsport.com/programs/469302J69?reg_role=coach" target = "_blank">REGISTER A VOLUNTEER</a>
-</div>
-
-<!--div id = "container">
-	<div>
-		<div class = "more-link-line" style = "text-align: center;">
-			<a class = "more-link" href = "https://system.gotsport.com/programs/9369R1211?reg_role=player" target = "_blank">REGISTER A PLAYER</a>
-		</div>
-	</div>
-	<div>
-		<div class = "more-link-line" style = "text-align: center;">
-			<a class = "more-link" href = "https://system.gotsport.com/programs/469302J69?reg_role=coach" target = "_blank">REGISTER A VOLUNTEER</a>
-		</div>
-	</div>
 </div-->
 
+<div class = "gridContainer" style = "margin-top: 30px; margin-bottom: 20px;">
+	<div>
+		<div class = "more-link-line" style = "text-align: center;">
+			<a class = "more-link" href = "https://system.gotsport.com/programs/6996N5949?reg_role=player" target = "_blank">REGISTER A PLAYER</a>
+		</div>
+	</div>
+	<div>
+		<div class = "more-link-line" style = "text-align: center;">
+			<a class = "more-link" href = "https://system.gotsport.com/programs/41396D559?reg_role=coach" target = "_blank">REGISTER A VOLUNTEER</a>
+		</div>
+	</div>
+</div>
+
+<h3 style = "text-align: center;">Schedule</h3>
+
+<div class = "gridContainer">
+	<div>
+		<table class = "TOPSoccerTable">
+			<tr>
+				<td>2/12</td>
+				<td>5:30p - 6:30p</td>
+			</tr>
+			<tr>
+				<td>2/19</td>
+				<td>7:30p - 8:30p</td>
+			</tr>
+			<tr>
+				<td>2/26</td>
+				<td>7:30p - 8:30p</td>
+			</tr>
+		</table>
+	</div>
+
+	<div>
+		<table class = "TOPSoccerTable">
+			<tr>
+				<td>3/5</td>
+				<td>7:30p - 8:30p</td>
+			</tr>
+			<tr>
+				<td>3/12</td>
+				<td>5:30p - 6:30p</td>
+			</tr>
+			<tr>
+				<td>3/19</td>
+				<td>5:30p - 6:30p</td>
+			</tr>
+		</table>
+	</div>
+</div>
+
+<h5 style = "text-align: center; margin-top: 50px;">Questions? Please contact:</h5>
+
+<table class = "contactTable" style = "margin-bottom: 50px;">
+	<tr>
+		<td>
+			<p>Megan Coleman</p>
+			<p><a href = "mailto:mcolemanotd@gmail.com">mcolemanotd@gmail.com</a></p>
+			<p><a href = "tel:9075296039">(907) 529-6039</a></p>
+		</td>
+		<td>
+			<p>Joe Schmid</p>
+			<p><a href = "mailto:jschmid1515@gmail.com">jschmid1515@gmail.com</a></p>
+			<p><a href = "tel:8454904048">(845) 490-4048</a></p>
+		</td>
+	</tr>
+
+
+</table>
+
+
 <p style = "text-align: center;">Learn more at the <a href = "https://www.facebook.com/TOPSoccerAlaska" target = "_blank">AYSA TOPSoccer Facebook page</a>.</p>
-
-<div style = "text-align: center;"><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="450" scrolling="no" src="https://www.youtube.com/embed/K0XdC_FxPVY" width="800"></iframe></div>
-
 <div class = "mobileOnly">
 
 	<hr />
+
+	<div style = "text-align: center; margin-bottom: 20px;"><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="450" scrolling="no" src="https://www.youtube.com/embed/K0XdC_FxPVY" width="800"></iframe></div>
 
 	<p><a href="https://www.usyouthsoccer.org/programs/topsoccer/" target = "_blank">US Youth Soccer TOPSoccer</a> (The Outreach Program for Soccer) is a community-based training and team placement program for young athletes with disabilities.</p>
 
