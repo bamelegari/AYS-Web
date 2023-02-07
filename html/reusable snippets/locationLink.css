@@ -1,0 +1,9 @@
+/*Location Link-------------*/
+	/*NOTE: YOU MUST ADD THIS LINE TO THE HTML FOR THIS TO WORK: <link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">  */
+	.locationLink::before {
+		font-family: "Material Icons";
+		content: "\e55f";
+		display: inline-block;
+		font-size: 1.3em;
+	}
+/*end-----------------------*/
