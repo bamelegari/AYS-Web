@@ -1,0 +1,22 @@
+.linksLine {
+	margin-top: 50px;
+	display: grid;
+	grid-auto-flow: column;
+	grid-auto-columns: repeat(2, 1fr);
+	align-items: start;
+	justify-items: center;
+	justify-content: space-evenly;
+	margin-bottom: 40px;
+}
+
+.linksline h2{
+	text-align: center;
+
+
+}
+
+.linksline h5 {
+	text-align: center;
+
+
+}
