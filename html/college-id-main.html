@@ -1,101 +1,257 @@
 <style type = "text/css">
 
-#slideshowDiv {
-	float: right;
-	width: 100%;
-	height: 480px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	margin-bottom: 10px;
-}
+	/*Location Link-------------*/
+	/*NOTE: YOU MUST ADD THIS LINE TO THE HTML FOR THIS TO WORK: <link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">  */
+	.locationLink::before {
+		font-family: "Material Icons";
+		content: "\e55f";
+		display: inline-block;
+		font-size: 1.3em;
+	}
+	/*end-----------------------*/
 
-#slideshowDiv img {
-	position: absolute;
-	transition: opacity 1.5s;
-	opacity: 0;
-	margin-left: auto;
-	margin-right: auto;
-	object-fit: contain;
-}
+	/*simple fade slideshow---------*/
+	#slideshowDiv {
+		float: right;
+		width: 100%;
+		height: 480px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 10px;
+	}
 
-#slideshowDiv img.fadeIn {
-	opacity: 1;
-}
+	#slideshowDiv img {
+		position: absolute;
+		transition: opacity 1.5s;
+		opacity: 0;
+		margin-left: auto;
+		margin-right: auto;
+		object-fit: contain;
+	}
+
+	#slideshowDiv img.fadeIn {
+		opacity: 1;
+	}
+
+	/*end---------------------------*/
+
+	.schoolsSection {
+		float: none;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		width: 100%;
+		text-align: center;
+
+	}
+
+	.schoolsTable {
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 20px;
+		margin-top: 10px;
+		width: auto;
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.schoolsTable img {
+		height: 2rem !important;
+		margin-right: 1ex;
+		margin-left: 1ex;
+	}
+
+	.schoolsTable th {
+		color: #fcb23d;
+	}
+
+	.schoolsTable td {
+		padding: 5px;
+	}
+
+	.schoolsTable td:first-child {
+		text-align: center;
+	}
+
+	.mobileOnly {
+		display: none !important;
+	}
+
+	.mobileTableHeader {
+		background: #17468c !important;
+		color: #fcb23d !important;
+	}
+	
+	@media screen and (max-width: 959px) {
+		.nonMobile {
+			display: none !important;
+		}
+		
+		.mobileOnly {
+			display: block !important;
+		}
+	
+	}
 
 </style>
-
-<p style="text-align: center;"><img alt="College ID Camp logo" height="309" src="/assets/129/6/collegeID_logo.png" width="302" /></p>
-
-<h2 style = "text-align: center;">Alaska Youth Soccer College ID Camp</h2>
-<h5 style = "text-align: center;">College Coach Recruiting Forum</h5>
-
-<!-- off-season placeholder --><p>The Alaska Youth Soccer College ID Camp brings high-level training sessions to over 100 high school players from colleges looking to recruit Alaskan soccer players at schools that best fit Alaskans and where Alaskans have had successful players and academic careers. More information will be posted regarding the 2023 College ID camp when it becomes available.</p>
+<link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 
+<p style="text-align: center;"><img alt="College ID Camp logo" height="309" src="/assets/129/6/Alaska_PMS019.png" width="302" /></p>
 
-<!--h5 style = "text-align: center;">June 5-8, 2022</h5-->
+<h2 style = "text-align: center;">2023 Alaska Youth Soccer College ID Camp</h2>
 
-<!--div class = "more-link-line" style = "text-align: center; margin-bottom: 20px;">
-	<a class = "more-link" href = "https://system.gotsport.com/programs/86B300517?reg_role=player" target = "_blank">REGISTER</a>
-</div-->
+<h3 style = "text-align: center;">College Coaches Recruiting Forum June 7</h3>
+<h3 style = "text-align: center;">Morning and Afternoon Training Sessions June 8-10</h3>
+<p style = "text-align: center; margin-top: -7px;"><strong>Camp Fee: $300</strong></p>
+<p style = "text-align: center;"><strong><a href = "https://goo.gl/maps/JQtHS1RiX8RtLJQp6" target = "_blank" class = locationLink>West Anchorage High School</a> and <a href = "https://goo.gl/maps/fDfVgEHL3rYnxwvM9" target = "_blank" class = "locationLink">Romig Middle School</a> turf fields</strong></p>
+
+<div class = "more-link-line" style = "text-align: center; margin-bottom: 20px; margin-top: 7px;">
+	<a class = "more-link" href = "https://system.gotsport.com/programs/1361Z0085?reg_role=player" target = "_blank">REGISTER</a>
+</div>
+
+<p>The Alaska Youth Soccer College ID Camp brings high-level training sessions to over 100 high school players from colleges looking to recruit Alaskan soccer players at schools that best fit Alaskans and where Alaskans have had successful players and academic careers.</p>
 
 <!--div class = "more-link-line" style = "text-align: center; margin-bottom: 20px;">
 	<a class = "more-link" href = "https://www.alaskayouthsoccer.org/programs-and-leagues/collegeid-schedule/" target = "_blank">SCHEDULE</a>
 </div-->
 
-<!--p>The Alaska Youth Soccer College ID Camp brings high-level training sessions to over 100 high school players from colleges looking to recruit Alaskan soccer players at schools that best fit Alaskans and where Alaskans have had successful players and academic careers. Six training sessions will be held.</p-->
+<p>Registration is open to all incoming freshmen through recent graduates. No club affiliation is required. The camp fee of $300 includes the coach recruiting forum, six training sessions, and a camp training fee.</p>
 
-<div id = "slideshowDiv"></div>
+<h5 style = "text-align: center;">The following schools have confirmed coaches attending*:</h5>
+<div class = "nonMobile">
+	<div class = "schoolsSection">
+		<table class="responsive-table theme02 data-table schoolsTable">
+			<tbody>
+				<tr>
+					<th colspan="2"><strong>Men's</strong></th>
+				</tr>
+				<tr>
+					<td><img src = "/assets/129/6/utahtech.png" alt = "CISC"></td>
+					<td>Utah Tech (DI)</td>
+				</tr>
+				<tr>
+					<td><img src = "/assets/129/6/fortlewis.png" alt = "CISC"></td>
+					<td>Fort Lewis (DII)</td>
+				</tr>
+				<tr>
+					<td><img src = "/assets/129/6/whitworth.png" alt = "CISC"></td>
+					<td>Whitworth (DIII)</td>
+				</tr>
+				<tr>
+					<td><img src = "/assets/129/6/collegeofidaho.png" alt = "CISC"></td>
+					<td>College of Idaho (NAIA)</td>
+				</tr>
+				<tr>
+					<td><img src = "/assets/129/6/westernoregon.png" alt = "CISC"></td>
+					<td>Western Oregon (NAIA)</td>
+				</tr>
+				<tr>
+					<td><img src = "/assets/129/6/clarkcollege.png" alt = "CISC"></td>
+					<td>Clark College (NWAAC)</td>
+				</tr>
+			</tbody>
+		</table>
 
-
-
-<!--p>Registration is open to all incoming freshmen through recent graduates. No club affiliation required.</p>
-<p>The camp fee is $275. Two training sessions per day will take place at the West High School &amp; Romig Middle School turf fields.</p>
-
-<p>Coaches from the following teams have confirmed attendance:</p>
-
-
-<div style = "columns: 2; width: 100%; text-align: center;">
-	<div style = "display: inline-block; text-align: left;">
-		<h5 style = "margin-bottom: 0px;">Men's</h5>
-		<ul style = "break-inside: avoid-column; page-break-inside: avoid;">
-			<li>Metro State Denver (DII)</li>
-			<li>Montana State Billings (DII)</li>
-			<li>Western Oregon (DII)</li>
-			<li>UC Colorado Springs (DII)</li>
-			<li>Pacific (DIII)</li>
-			<li>Embry Riddle AZ (NAIA)</li>
-			<li>Edmonds (NWAAC)</li>
-		</ul>
-	</div>
-	
-	<div style = "display: inline-block; text-align: left;">
-		<h5 style = "margin-bottom: 0px;">Women's</h5>
-		<ul style = "break-before: column; break-inside: avoid-column; page-break-inside: avoid;">
-			<li>University of Idaho (DI)</li>
-			<li>University of Northern Colorado (DI)</li>
-			<li>Portland State (DI)</li>
-			<li>University of North Dakota (DI)</li>
-			<li>Western Oregon (DII)</li>
-			<li>Linfield (DIII)</li>
-			<li>Pacific Lutheran (DIII)</li>
-			<li>Columbia Basin (NWAAC)</li>
-			<li>Peninsula College (NWAAC)</li>
-		</ul>
+		<table class="responsive-table theme02 data-table schoolsTable">
+			<tbody>
+				<tr>
+					<th colspan="2"><strong>Women's</strong></th>
+				</tr>
+				<tr>
+					<td><img src = "/assets/129/6/georgewashington.png" alt = "CISC"></td>
+					<td>George Washington (DI)</td>
+				</tr>
+				<tr>
+					<td><img src = "/assets/129/6/utexastyler.png" alt = "CISC"></td>
+					<td>University of Texas at Tyler (DII)</td>
+				</tr>
+				<tr>
+					<td><img src = "/assets/129/6/carroll.png" alt = "CISC"></td>
+					<td>Carroll College (NAIA)</td>
+				</tr>
+				<tr>
+					<td><img src = "/assets/129/6/columbiabasin.png" alt = "CISC"></td>
+					<td>Columbia Basin (NWAAC)</td>
+				</tr>
+			</tbody>
+		</table>
 	</div>
 </div>
+<!-- end nonmobile tables-->
 
-<div style = "text-align: center; margin-bottom: 0px;"><p><h5 style = "display: inline;">Goalkeeper Coach:</h5> Nick Irwin (Portland State &amp; Lewis and Clark)</p></div>
+<div class = "mobileOnly">
+	<div class = "schoolsSection">
+		<table class="responsive-table theme02 data-table schoolsTable">
+			<tbody>
+				<tr>
+					<td class = "mobileTableHeader" colspan="2"><strong>Men's</strong></td>
+				</tr>
+				<tr>
+					<td><img src = "/assets/129/6/utahtech.png" alt = "CISC"></td>
+					<td>Utah Tech (DI)</td>
+				</tr>
+				<tr>
+					<td><img src = "/assets/129/6/fortlewis.png" alt = "CISC"></td>
+					<td>Fort Lewis (DII)</td>
+				</tr>
+				<tr>
+					<td><img src = "/assets/129/6/whitworth.png" alt = "CISC"></td>
+					<td>Whitworth (DIII)</td>
+				</tr>
+				<tr>
+					<td><img src = "/assets/129/6/collegeofidaho.png" alt = "CISC"></td>
+					<td>College of Idaho (NAIA)</td>
+				</tr>
+				<tr>
+					<td><img src = "/assets/129/6/westernoregon.png" alt = "CISC"></td>
+					<td>Western Oregon (NAIA)</td>
+				</tr>
+				<tr>
+					<td><img src = "/assets/129/6/clarkcollege.png" alt = "CISC"></td>
+					<td>Clark College (NWAAC)</td>
+				</tr>
+			</tbody>
+		</table>
 
-<p style = "font-size: 0.8em; margin-top: -10px; text-align: center;";>Note that coaches will recruit for both genders.</p-->
+		<table class="responsive-table theme02 data-table schoolsTable">
+			<tbody>
+				<tr>
+					<td class = "mobileTableHeader" colspan="2"><strong>Women's</strong></td>
+				</tr>
+				<tr>
+					<td><img src = "/assets/129/6/georgewashington.png" alt = "CISC"></td>
+					<td>George Washington (DI)</td>
+				</tr>
+				<tr>
+					<td><img src = "/assets/129/6/utexastyler.png" alt = "CISC"></td>
+					<td>University of Texas at Tyler (DII)</td>
+				</tr>
+				<tr>
+					<td><img src = "/assets/129/6/carroll.png" alt = "CISC"></td>
+					<td>Carroll College (NAIA)</td>
+				</tr>
+				<tr>
+					<td><img src = "/assets/129/6/columbiabasin.png" alt = "CISC"></td>
+					<td>Columbia Basin (NWAAC)</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>	
+</div>
+<!--end mobile tables-->
 
-<!--div class = "more-link-line" style = "text-align: center; margin-bottom: 20px;">
-	<a class = "more-link" href = "https://system.gotsport.com/programs/86B300517?reg_role=player" target = "_blank">REGISTER</a>
-</div-->
+<!--div style = "text-align: center; margin-bottom: 0px;"><p><h5 style = "display: inline;">Goalkeeper Coach:</h5> Nick Irwin (Portland State &amp; Lewis and Clark)</p></div-->
 
-<p>If you have questions, contact Camp Director Dan Rufner at <a href = "mailto:dan@adpsoccer.org">dan@adpsoccer.org</a> or 907-764-2567.</p>
+<p style = "font-size: 0.8em; margin-top: -2px; text-align: center;";>Note that coaches will recruit for both genders.</p>
+<p style = "font-size: 0.8em; margin-top: -10px; text-align: center;";>*Check back, as more coaches may be added!</p>
+
+<p style = "text-align: center;">If you have questions, contact Camp Director Dan Rufner at <a href = "mailto:dan@adpsoccer.org">dan@adpsoccer.org</a> or 907-764-2567.</p>
+
+<hr />
+
+<div id = "slideshowDiv"></div>
 
 <script> 
 var slideIndex = 0,
