@@ -1,0 +1,66 @@
+<style>
+	#eventsTable tr > td:first-child {
+		width: 30%;
+	}
+
+	#eventsTable tr > td {
+		border-right: solid darkgray thin;
+		border-left: solid darkgray thin;
+		border-collapse: collapse;
+	}
+
+	#eventsTable p, h5 {
+		margin-top: 0px;
+		margin-bottom: 5px;
+	}
+
+/*Location Link-------------*/
+	/*NOTE: YOU MUST ADD THIS LINE TO THE HTML FOR THIS TO WORK: <link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">  */
+	.locationLink::before {
+		font-family: "Material Icons";
+		content: "\e55f";
+		display: inline-block;
+		font-size: 1.3em;
+	}
+/*end-----------------------*/
+
+	.mobileOnly {
+		display: none !important;
+	}
+
+	@media screen and (max-width: 959px) {
+		.nonMobile {
+			display: none !important;
+		}
+		
+		.mobileOnly {
+			display: block !important;
+		}
+	}
+</style>
+<link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<table class="responsive-table theme02 data-table" id = "eventsTable">
+	<tbody>
+		<tr>
+			<th colspan = "2" style = "background: #fcb23d; color: #17468c;"><strong>2023 Season ADP Events</strong></th>
+		</tr>
+
+		<tr>
+			<td>
+				<h5>Scouting, Club Recommendations, and Invites</h5>
+				<p>January - April 2023</p>
+			</td>
+			<td><p>Club recommendations and Team Selection Camp invites will be sent out during this period.</p></td>
+		</tr>
+		<tr>
+			<td>
+				<h5>Team Selection Camp</h5>
+				<p>June 5-7, 2023</p>
+				<p>Anchorage, AK</p>
+				<p><a href = "https://goo.gl/maps/3MSKshstViZ1vzsy8" class = "locationLink" target = "_blank">West Anchorage High School</a> and <a href = "https://goo.gl/maps/n3REtUw4ZocQoPe38" class = "locationLink">Romig Middle School</a></p>
+			</td>
+			<td><p>The Team Selection Camp is for all players that have been scouted or recommended and invited to attend in the 2012-2009 age groups. This camp is invitation only and will serve as the opportunity for the coaching staff to select the teams for the upcoming events. We will select 32 players (2 teams, 24 total for the 2012 group) for the Training Camp and the Starfire Labor Day Cup and then from there we will select the 1 team of 16 that will attend the ODP Championships in Phoenix.</p></td>
+		</tr>
+	</tbody>
+</table>

@@ -1,0 +1,136 @@
+<style>
+	#eventsTable tr > td:first-child {
+		width: 30%;
+	}
+
+	#eventsTable tr > td {
+		border-right: solid darkgray thin;
+		border-left: solid darkgray thin;
+		border-collapse: collapse;
+	}
+
+	#eventsTable p, h5 {
+		margin-top: 0px;
+		margin-bottom: 5px;
+	}
+
+/*Location Link-------------*/
+	/*NOTE: YOU MUST ADD THIS LINE TO THE HTML FOR THIS TO WORK: <link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">  */
+	.locationLink::before {
+		font-family: "Material Icons";
+		content: "\e55f";
+		display: inline-block;
+		font-size: 1.3em;
+	}
+/*end-----------------------*/
+
+	.mobileOnly {
+		display: none !important;
+	}
+
+	@media screen and (max-width: 959px) {
+		.nonMobile {
+			display: none !important;
+		}
+		
+		.mobileOnly {
+			display: block !important;
+		}
+	}
+</style>
+<link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<p class = "mobileOnly" style = "text-align: center;"><img src = "/assets/129/6/ALASKA_ADP_COLOR_logo_2014.jpg" alt = "Alaska ODP Logo" style = "width: 70%;"></p>
+
+<!--p style = "text-align: center;"><strong>This page will be updated with information and itineraries for upcoming out of state ADP events when that information is available.</strong></p-->
+
+<!--p style = "text-align: center;"><strong>The previous year's ODP event fliers are left below to give an idea of what the events are like.</strong></p-->
+
+<table class="responsive-table theme02 data-table" id = "eventsTable">
+	<tbody>
+		<tr>
+			<th colspan = "2" style = "background: #fcb23d; color: #17468c;"><strong>2023 Season ADP Events</strong></th>
+		</tr>
+
+		<tr>
+			<td>
+				<h5>Scouting, Club Recommendations, and Invites</h5>
+				<p>January - April 2023</p>
+			</td>
+			<td><p>Club recommendations and Team Selection Camp invites will be sent out during this period.</p></td>
+		</tr>
+		<tr>
+			<td>
+				<h5>Team Selection Camp</h5>
+				<p>June 5-7, 2023</p>
+				<p>Anchorage, AK</p>
+				<p><a href = "https://goo.gl/maps/3MSKshstViZ1vzsy8" class = "locationLink" target = "_blank">West Anchorage High School</a> and <a href = "https://goo.gl/maps/n3REtUw4ZocQoPe38" class = "locationLink">Romig Middle School</a></p>
+			</td>
+			<td><p>The Team Selection Camp is for all players that have been scouted or recommended and invited to attend in the 2012-2009 age groups. This camp is invitation only and will serve as the opportunity for the coaching staff to select the teams for the upcoming events. We will select 32 players (2 teams, 24 total for the 2012 group) for the Training Camp and the Starfire Labor Day Cup and then from there we will select the 1 team of 16 that will attend the ODP Championships in Phoenix.</p></td>
+		</tr>
+		<tr>
+			<td>
+				<h5>ADP Futures Camp</h5>
+				<p>June 5-7, 2023</p>
+				<p>Anchorage, AK</p>
+				<p><a href = "https://goo.gl/maps/3MSKshstViZ1vzsy8" class = "locationLink" target = "_blank">West Anchorage High School</a> and <a href = "https://goo.gl/maps/n3REtUw4ZocQoPe38" class = "locationLink">Romig Middle School</a></p>
+			</td>
+			<td><p>This year we will also be hosting an ADP Futures Camp for the 2013 and 2014 age groups. This camp will run alongside the Team Selection Camp for the 2012-2009 players. This camp is for the players to experience the ADP program and staff, they will not be chosen for teams or sent to events after this camp.</p></td>
+		</tr>
+		<tr>
+			<td>
+				<h5>AYSA College ID Camp</h5>
+				<p>June 7-10, 2023</p>
+				<p>Anchorage, AK</p>
+				<p><a href = "https://goo.gl/maps/3MSKshstViZ1vzsy8" class = "locationLink" target = "_blank">West Anchorage High School</a> and <a href = "https://goo.gl/maps/n3REtUw4ZocQoPe38" class = "locationLink">Romig Middle School</a></p>
+			</td>
+			<td><p>See the <a href = "/programs-and-leagues/collegeid-camp/" target = "_blank">College ID Camp page</a>.</p></td>
+		</tr>
+		<tr>
+			<td>
+				<h5>Team Training Camp</h5>
+				<p>August 7-8, 2023</p>
+				<p>Fairbanks, AK</p>
+				<p><a href = "https://goo.gl/maps/fuAQNknJa838ox1k7" class = "locationLink" target = "_blank">Turf Complex</a></p>
+			</td>
+			<td><p>The players selected to join ADP teams will attend this team-only training in the days after State Cup to help them get to know each other and the coaching staff for their group to prepare for the next events.</p></td>
+		</tr>
+		<tr>
+			<td>
+				<h5>Starfire Labor Day Cup</h5>
+				<p>August 31 - September 4, 2023</p>
+				<p>Seattle, WA</p>
+				<p><a href = "https://goo.gl/maps/2Wyun5pvNmvPwdBs8" class = "locationLink" target = "_blank">Starfire Sports Campus</a></p>
+			</td>
+			<td><p>Will be attended by the selected 2012-2009 teams. More information at the <a href = "https://www.starfiresports.com/youth/youth-tournaments/youth-tournaments-jamborees/" target = "_blank">Starfire tournament page</a>.</p></td>
+		</tr>
+		<tr>
+			<td>
+				<h5>Sports Source Showcase</h5>
+				<p>December 1-3, 2023</p>
+				<p>Dallas, TX</p>
+				<p><a href = "https://goo.gl/maps/88SK8rsdGrSzjJVAA" class = "locationLink" target = "_blank">UTD Soccer Complex</a> and <br class = "nonMobile" /><a href = "https://goo.gl/maps/bwJAhPLWQtsAkqkQ9" class = "locationLink" target = "_blank">Northeast Community Park</a></p>
+			</td>
+			<td><p>One team of 16 players will be selected from the 2008-2006 age groups to attend this event.</p></td>
+		</tr>
+		<tr>
+			<td>
+				<h5>ODP Championships</h5>
+				<p>January 3-8, 2024 <span style = "font-size: small;">(tentative)</span></p>
+				<p>Phoenix, AZ</p>
+				<p><a href = "https://goo.gl/maps/XB9UfZgRv3Ee7BTH6" class = "locationLink" target = "_blank">Bell Bank Park</a></p>
+			</td>
+			<td><p>One team of 16 players will be selected to attend this event.</p></td>
+		</tr>
+		<tr>
+			<td>
+				<h5>PacNW Showcase</h5>
+				<p>January 12-16, 2024 <span style = "font-size: small;">(tentative)</span></p>
+				<p>Seattle, WA</p>
+			</td>
+			<td><p>One team of 16 players will be selected from the 2008-2006 age groups to attend this event.</p></td>
+		</tr>
+	</tbody>
+</table>
+
+<p><strong>Questions?</strong> Contact AYSA Technical Director Brian Lux at <a href = "mailto:alaskatechnicaldirector@gmail.com">alaskatechnicaldirector@gmail.com</a></p>
